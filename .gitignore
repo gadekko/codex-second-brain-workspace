@@ -6,3 +6,8 @@ dist/
 .env
 .env.*
 !.env.example
+
+# Private decision-provider runtime
+*.sqlite3
+*.sqlite3-*
+jev-config.local.json

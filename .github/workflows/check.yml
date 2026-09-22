@@ -13,5 +13,7 @@ jobs:
         run: python3 -B -m unittest discover -s skills/create-project-second-brain/scripts -p 'test_audit_brain.py' -v
       - name: Test release packaging
         run: python3 -B -m unittest discover -s scripts -p 'test_build_bundle.py' -v
+      - name: Test Jev adapter without network or credentials
+        run: python3 -B -m unittest discover -s skills/maintain-codex-workspace/scripts -p 'test_jev_decide.py' -v
       - name: Build and verify downloadable ZIP
         run: python3 -B scripts/build_bundle.py

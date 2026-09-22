@@ -21,6 +21,8 @@ Merge a concise rule into the person's existing project AGENTS.md with actual en
 
 Use stable paths accessible from both interactive tasks and scheduled execution. A prompt or profile file alone does not establish that fresh tasks will load it. Record whether routing was behaviorally tested, only inspected, or blocked.
 
+If Jev is selected and connected, wire its [decision adapter](jev-decisions.md) into workflow selection and source prioritization. Deterministic matches bypass it; shadow mode cannot steer execution. Read required sources fully and fall back to the same Codex model when uncertain.
+
 ## Offer a concrete recurring setup
 
 As part of complete onboarding, explain and offer these routines in plain language. Reuse choices already made; do not leave the person to configure them alone.

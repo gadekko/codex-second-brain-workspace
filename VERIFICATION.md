@@ -2,6 +2,8 @@
 
 Prepared: 2026-09-22.
 
+For v0.1.3, an optional TypeSafe Jev API adapter and guided connection/evaluation instructions were added. Fourteen synthetic adapter tests cover response validation, confidence/abstention fallback, shadow mode, batching, versioned/expiring caching, budgets, redacted failures, redirects and disabled/missing-key behavior. All 31 automated tests passed. No Jev credential was available during development: live API compatibility, accuracy improvements and net token/cost savings remain unverified. No private project data was sent to TypeSafe.
+
 For v0.1.2, everyday request routing, a dedicated maintenance skill and guided daily/attention/meeting schedule setup were added. These instructions have not been tested with real accounts or an actual scheduled run.
 
 For v0.1.1, the canonical AGPL-3.0 license text is included at the bundle root and in the independently installable skill folders. The license grant is version 3 only. Packaging tests additionally check license inclusion and reject a missing root license. All 17 automated tests passed for this revision; source/model-behavior limitations below remain unchanged.

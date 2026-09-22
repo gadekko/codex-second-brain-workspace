@@ -1,0 +1,11 @@
+{
+  "enabled": false,
+  "mode": "shadow",
+  "model": "jev-1.13.0",
+  "min_confidence": 0.9,
+  "min_probability": 0.9,
+  "cache_ttl_seconds": 3600,
+  "max_daily_calls": 100,
+  "max_daily_usd": 0.1,
+  "evaluation_id": null
+}

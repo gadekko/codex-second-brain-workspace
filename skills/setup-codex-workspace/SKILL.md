@@ -62,6 +62,8 @@ Prefer existing connectors and supported APIs. Use installed plugin skills when 
 
 Complete one useful read test for each required capability in the correct account, within the authorized scope. Verify attachment retrieval separately if the workflow needs it. A safe scoped read may be enough; write access needs a separate test only when writes are required and authorized. Avoid sending test messages to people. Record failures and coverage accurately. Continue independent setup while the user completes OAuth or administrator steps.
 
+Offer the optional [Jev decision connection](references/jev-decisions.md) when the person wants lower-cost routing or source prioritization. Guide access and secret setup, run a synthetic connection test, and register the helper in their private workflow instructions. Start in shadow mode; require measured quality before assist mode. Keep their selected Codex model/depth and full source scope. Jev is not required to complete setup.
+
 ## 4. Learn the person's writing, routines and workflows
 
 Once the selected connections work, explain that you can learn from their own sent messages, relevant received threads and calendar history to make useful skills. Settle which accounts, life/work areas, date range and exclusions they want included before reading history. Offer a bounded starting window, such as the last 30 days, with a choice to broaden, narrow, use supplied examples or skip. Reuse explicit scope already given; installed connections alone do not authorize a whole-life scan.
