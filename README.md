@@ -1,6 +1,6 @@
 # Codex Second-Brain Workspace
 
-A guided setup for turning a local project into a source-linked second brain and connected AI workspace.
+A reusable setup and operating method for a fully integrated AI work environment: Codex learns the user's context and history, works across their tools, carries out authorized workflows, and improves its maintained knowledge and skills from experience.
 
 Start with no project folder and no connected accounts. The setup skill asks what the project is for, helps create or select a local folder, and walks through each needed connection one step at a time. With an agreed scope, it learns from the person's own sent messages, relevant threads and calendar history, maps writing style and recurring workflows, and creates and tests personalized skills. The included builder preserves originals, creates full Markdown clones, reads the material, and organizes linked topic clusters and source indexes.
 
@@ -12,7 +12,15 @@ Start with no project folder and no connected accounts. The setup skill asks wha
 
 > Read START_HERE.md in this bundle and guide me through setup from the beginning. Ask what my second brain is for and whether I have a local project folder. Help me connect each needed tool one step at a time. Agree which messages and calendars you may review, learn my writing style and routines, and help me review a workflow map. Create and test useful personalized skills in my private workspace, then build the second brain and set up the recurring work I choose.
 
-Follow [START_HERE.md](START_HERE.md) for direct-file use, installation and the local-only option. You still complete your own sign-ins, account permissions and project choices. Do not put your passwords or private project documents in this repository.
+Follow [START_HERE.md](START_HERE.md) for direct-file use, installation and the local-only option. You still complete your own sign-ins, account permissions and project choices.
+
+## The toolkit and your working environment
+
+This repository is the reusable toolkit. It contains generic methods and synthetic tests, not its author's messages, receipts, calendar, client files or working history.
+
+Your own workspace is where your actual work belongs. It may be a local folder, your own private repository, connected services, or a combination. It is expected to contain your authorized documents, correspondence, project context, learned preferences and personal skills. Keeping the shared toolkit generic does **not** prohibit private data in your private workspace or private repository. Keep credentials in an appropriate secret store, and choose actual access/backup arrangements for your data.
+
+The setup establishes a map of your projects, responsibilities, tools and workflows. Daily work then uses the relevant current context, performs the actions you have authorized, verifies the result, and records what changed. The [continuous-learning method](skills/setup-codex-workspace/references/continuous-learning.md) turns corrections and demonstrated workflow improvements into tested skill updates with version history and rollback. It updates files and skills; it does not retrain the underlying model or create unlimited automatic access to all your information.
 
 ## Included skills
 
@@ -44,7 +52,7 @@ GitHub Actions runs the integrity and audit-helper tests on pushes and pull requ
 
 ## Sharing
 
-The repository contains generic methods and synthetic tests only. Learning a person's writing style and routines happens later in their selected private workspace. Raw messages, calendar events, personal profiles, account details and generated personal skills must never be copied back here or included in this distribution. Source history is read only within the accounts, date range and areas the person selects. Observed patterns remain tentative until reviewed; sign-in does not grant permission for an unrestricted scan or automatic sending.
+The reusable toolkit contains generic methods and synthetic tests only. Never seed it with its author's private work or copy a user's private workspace back into this toolkit distribution. This is a rule for the shared method repository and its release ZIP, not a ban on real data in users' own private repositories. Source history is read within the accounts, date range and areas the person selects. Observed patterns remain tentative until reviewed; sign-in does not grant permission for an unrestricted scan or automatic sending.
 
 The bundle checker rejects common private email addresses, home-directory paths and credential patterns in method payloads. This is a limited check, not proof that arbitrary prose contains no private information; inspect every intended release's content as well.
 

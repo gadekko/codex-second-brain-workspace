@@ -2,6 +2,8 @@
 
 This repository contains reusable methods, not a user's private second brain. Keep client files, account identities, credentials, runtime memory and real project evidence outside it. Use synthetic examples for testing.
 
+This restriction is for the toolkit repository and its releases. Users' own private workspaces/repositories are expected to contain their actual work and personal context. Preserve that distinction; do not turn toolkit hygiene into a prohibition on the product's core purpose. Include ongoing context and tested skill maintenance, not only one-time onboarding.
+
 Preserve the first-time-user onboarding: ask project purpose and whether a local folder exists, then guide one needed connection at a time and verify it. Do not assume a ZIP upload, installed plugin or completed sign-in proves that the full workflow works.
 
 After connections, agree the person's mail/calendar discovery scope. Learn only from authorized history, distinguish self-authored voice and observed cadence from confirmed preferences, review the workflow map, and create/test actual personalized skills. All user-specific evidence, profiles and generated personal skills live outside this repository in that person's private workspace. Never use the repository author's history as example data.

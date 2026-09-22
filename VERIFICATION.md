@@ -6,6 +6,8 @@ The onboarding instructions were subsequently revised to begin with project purp
 
 The personal-workflow phase now specifies scoped email/calendar review, evidence-based writing profiles and cadence, a user-reviewed workflow map, and creation/installation/testing of actual private personal skills. These instructions were reviewed for source scope, authorship distinctions, preference confirmation, private storage and external-action boundaries. No real person's email or calendar was accessed to develop or test this phase.
 
+The operating method also covers daily context maintenance, executing authorized work, correction propagation, skill revision with regression checks, version history and rollback. Users' own private repositories may contain their real data; the generic-only restriction applies to this toolkit's source and release payload. These procedures have not yet been demonstrated across a real user's full working environment.
+
 The repository's release builder has six synthetic tests covering payload membership, changed files, broken links, symlinks, common private markers and reserved example addresses. Private-marker checks apply before manifest refresh as well as before builds and do not echo flagged content in their error messages. They are not a semantic confidentiality guarantee.
 
 ## Included and checked

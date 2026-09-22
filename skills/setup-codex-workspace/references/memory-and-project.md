@@ -9,11 +9,14 @@ Map these responsibilities to existing files/services before creating new ones:
 | Human task system | The user's chosen task board/calendar; link IDs instead of maintaining competing status copies |
 | Global/native assistant memory | Explicitly requested stable preferences and pointers; optional, governed by the environment's write policy |
 | Runtime state | Checkpoints, cursors, deduplication keys, leases and run receipts; separate from reviewed knowledge |
-| Reusable skills | Generic method only; no credentials or private project facts |
+| Shared toolkit skills | Generic method only; no creator/user private data in toolkit releases |
+| User's personal skills and profiles | Private workspace/repository context and instructions, with source scope and access controls |
 
 Do not create another `TASKS.md` with independently editable task status when the user already uses an external authoritative board. A local index can link task IDs and record last verified sync time. If the service is unavailable, mark cached status stale and retain an explicit unsynced queue.
 
 ## Minimal project setup
+
+The user's private repository may contain their real documents, correspondence-derived knowledge, profiles and personal skills when authorized. The toolkit's generic-distribution rule does not prohibit this. Keep the method copy and the user's private state mapped separately so a toolkit export cannot sweep in their data. Never populate the toolkit with its creator's history as starter content.
 
 Reuse the builder's entrypoint, status, decisions, sources and maintenance records. For a new small project, these can be a few combined documents; no fixed folder tree is required. Add operations notes containing verified account boundaries, connection checks, routine definitions and recovery instructions. Keep technical run state in a clearly identified private runtime directory.
 

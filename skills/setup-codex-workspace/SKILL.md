@@ -7,6 +7,8 @@ description: Guide first-time Codex workspace setup, connect tools, learn writin
 
 Turn the user's actual work into a resumable, connected workspace. Guide the user through choices and sign-in steps, carry out authorized setup, and demonstrate that the result works. A folder, installed plugin, saved memory note or scheduled prompt is only one part of that outcome.
 
+The endpoint is an operating work environment, not only document organization: map the person's responsibilities and available tools, recover relevant context from their history, perform authorized workflows end to end, and improve maintained knowledge and skills after real work. A user's own private repository is a valid home for their real project files, mail-derived context, profiles and skills. The generic-data restriction applies to this shared toolkit and its releases, not to that private working environment. Never seed the toolkit with its creator's private history.
+
 This is a companion to `create-project-second-brain`, `create-dispute-second-brain` and `create-investment-second-brain`. It owns workspace onboarding and operational wiring. One selected builder owns the project's knowledge structure and source integration. Keep one coordinator and one authoritative home for each record.
 
 In the standalone bundle, the complete [general builder](../create-project-second-brain/SKILL.md) is included. Read it directly when it is not installed in the skill catalog. For this bundle's default request to set up a workspace from all local project files, use its [full local-corpus workflow](../create-project-second-brain/references/local-corpus.md): preserve originals, create faithful Markdown clones, read the corpus and build linked topic clusters and retrieval indexes. Domain-specific dispute/investment skills are optional and are not included or required for this general workflow. Respect a narrower endpoint if the user requests one.
@@ -20,6 +22,8 @@ Assume a first-time user has not connected email, calendar, files or other servi
 Read [connection checks](references/connections.md) when selecting or connecting services, [memory and project records](references/memory-and-project.md) when establishing the project, and [automation and acceptance](references/automation-and-acceptance.md) before recurring execution. Read [current product sources](references/product-sources.md) when resolving Codex capability or UI questions; discover current tools and use official documentation instead of assuming old menu labels or APIs still exist.
 
 After connections, read [learning writing style, cadence and workflows](references/work-pattern-discovery.md) and [creating personalized skills](references/personalized-skills.md) in full. These are part of normal complete onboarding, not optional suggestions left for the user to implement. The user can limit or skip any data source or phase; record the resulting limitation and offer an interview or supplied-example route.
+
+Before handoff, read and implement [continuous learning and skill updates](references/continuous-learning.md): establish the working environment's startup/closing contract, correction ledger, skill revision records and verified refresh routines. Learning must persist in usable records and tested skills rather than remain in a conversation.
 
 ## 1. Establish the work and current setup
 
@@ -105,7 +109,13 @@ Inspect existing schedules to avoid duplicates. Use the supported scheduler tool
 
 Use the run contract and recovery procedure in [automation and acceptance](references/automation-and-acceptance.md). Test the prompt manually, save the schedule, read back its actual settings, and distinguish that from a successful scheduled run. When local execution depends on an available computer/app, explain the verified host requirements. Never promise always-on service from a saved prompt or a dormant laptop.
 
-## 9. Handoff with demonstrated status
+## 9. Establish ongoing operation and improvement
+
+Implement the [continuous-learning method](references/continuous-learning.md) in the user's private environment. Map current knowledge, project namespaces, workflow/tool capabilities and action authority. Make daily tasks retrieve the relevant sources, do the authorized work, verify final state, update affected knowledge, capture corrections and improve skills under the agreed maintenance rules. Execute supported actions within existing authority; do not permanently limit every workflow to drafts when the user has authorized execution.
+
+Test one correction through the full path: evidence or user feedback → dated correction → affected knowledge/profile → skill revision where appropriate → replay of the failed example and a prior successful example → durable next-run instructions. Retain older versions and a rollback route. Enable requested source-refresh and review schedules using the real scheduler; do not claim passive background learning from the presence of these files.
+
+## 10. Handoff with demonstrated status
 
 Finish at the requested endpoint, with the project entrypoint, tested connections, authoritative records, demonstrated workflow and schedule status. Name only concrete outstanding user actions, such as signing into a specific account or enabling a blocked administrator permission. Provide the resume instruction for each.
 

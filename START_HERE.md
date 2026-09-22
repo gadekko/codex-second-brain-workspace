@@ -7,6 +7,8 @@ This bundle contains both workflows needed to turn a local project into a connec
 
 All method files and the general builder's structural audit helper are included. No separately installed second-brain skill, database or memory service is required. The specialized dispute and investment builders mentioned as optional routes are not included.
 
+The goal is an integrated work environment that uses your context across tools and improves its knowledge and skills from your corrections and actual results. Your own private folder or repository is meant to hold your real work and learned context. Only this reusable toolkit stays generic; it contains none of its creator's private work. The included [continuous-learning method](skills/setup-codex-workspace/references/continuous-learning.md) sets up ongoing context maintenance, skill revision, testing and rollback.
+
 ## Use without installation
 
 Extract the ZIP and give Codex the extracted folder. You do not need to have a project folder or any accounts connected yet. Paste this request, replacing only the bundle path (or attach the extracted folder and refer to it):
