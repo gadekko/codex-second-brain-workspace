@@ -4,11 +4,27 @@ import argparse
 import hashlib
 import importlib.util
 import json
+import re
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def check_private_markers(files):
+    """Limited release guard; does not establish semantic privacy of prose."""
+    email = re.compile(r'[A-Za-z0-9._%+-]+@([A-Za-z0-9.-]+\.[A-Za-z]{2,})')
+    home = re.compile(r'(?:/Users/|/home/)[A-Za-z0-9_.-]+|[A-Za-z]:\\Users\\[A-Za-z0-9_.-]+')
+    credential = re.compile(r'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----|(?:ghp_|github_pat_|sk-proj-)[A-Za-z0-9_\-]{20,}')
+    for p in files:
+        text = p.read_text(encoding='utf-8')
+        for line_number, line in enumerate(text.splitlines(), 1):
+            private_email = any(m.group(1).lower() not in {'example.com', 'example.org', 'example.net'}
+                                for m in email.finditer(line))
+            if private_email or home.search(line) or credential.search(line):
+                # Do not echo potentially sensitive content into logs.
+                raise ValueError(f'Potential private marker at {p.relative_to(ROOT)}:{line_number}; inspect before distributing.')
 
 
 def payload():
@@ -33,6 +49,7 @@ def main():
     mode.add_argument('--refresh', action='store_true', help='Record intentional changes to release files')
     args = parser.parse_args()
     files = payload()
+    check_private_markers(files)
     hashes = {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in files}
     manifest_path = ROOT / 'MANIFEST.json'
     if args.refresh:

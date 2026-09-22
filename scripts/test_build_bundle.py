@@ -43,6 +43,23 @@ class BundleTests(unittest.TestCase):
         (self.root / 'skills/external.md').symlink_to(self.root / 'README.md')
         self.assertNotEqual(self.run_builder('--refresh').returncode, 0)
 
+    def test_private_markers_block_even_manifest_refresh(self):
+        p = self.root / 'skills/setup-codex-workspace/private.md'
+        markers = ['person@private.invalid', '/Users/synthetic-person/mail.txt',
+                   'ghp_' + 'a' * 30, '-----BEGIN PRIVATE KEY-----']
+        for marker in markers:
+            with self.subTest(kind=marker[:8]):
+                p.write_text(marker)
+                result = self.run_builder('--refresh')
+                self.assertNotEqual(result.returncode, 0)
+                self.assertNotIn(marker, result.stderr)
+
+    def test_reserved_example_address_is_allowed(self):
+        p = self.root / 'skills/setup-codex-workspace/synthetic.md'
+        p.write_text('Synthetic contact: person@example.org')
+        self.assertEqual(self.run_builder('--refresh').returncode, 0)
+        self.assertEqual(self.run_builder('--check').returncode, 0)
+
 
 if __name__ == '__main__':
     unittest.main()

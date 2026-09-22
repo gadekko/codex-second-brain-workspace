@@ -1,6 +1,6 @@
 ---
 name: setup-codex-workspace
-description: Guide and carry out Codex workspace setup with the user, connecting their tools, a durable project second brain, memory and verified recurring workflows. Use for onboarding or repairing an AI automation workspace; ordinary source ingestion belongs to the relevant second-brain builder.
+description: Guide first-time Codex workspace setup, connect tools, learn writing style and routines from authorized email/calendar history, map work and life workflows, create personalized skills, and build a durable second brain with verified recurring work.
 ---
 
 # Set up a Codex workspace
@@ -15,9 +15,11 @@ In the standalone bundle, the complete [general builder](../create-project-secon
 
 Distinguish creating this reusable skill, giving advice, auditing an existing setup and actually setting up a user's workspace. A request for instructions or a skill does not authorize connecting accounts or starting schedules. During an authorized setup, complete reversible in-scope work without asking repeatedly. Authentication, unresolved account/destination choices and actions outside existing authority are genuine handoffs to the user.
 
-Assume a first-time user has not connected email, calendar, files or other services and may not have a local project folder. Do not assume technical vocabulary or familiarity with Codex. Explain the current step, offer a sensible default and walk through one action at a time. Reuse answers already given in this setup. Present a small progress list: purpose, local folder, Codex project, tool connections, memory, second-brain build, first workflow, recurring work. Skipped and blocked steps retain those labels. If the user tries a workflow halfway through setup, help them and return to the saved setup checkpoint.
+Assume a first-time user has not connected email, calendar, files or other services and may not have a local project folder. Do not assume technical vocabulary or familiarity with Codex. Explain the current step, offer a sensible default and walk through one action at a time. Reuse answers already given in this setup. Present a small progress list: purpose and folder, connections, learn how you work, review your workflow map, create your skills, second brain and memory, try the skills, recurring work. Skipped and blocked steps retain those labels. If the user tries a workflow halfway through setup, help them and return to the saved setup checkpoint.
 
 Read [connection checks](references/connections.md) when selecting or connecting services, [memory and project records](references/memory-and-project.md) when establishing the project, and [automation and acceptance](references/automation-and-acceptance.md) before recurring execution. Read [current product sources](references/product-sources.md) when resolving Codex capability or UI questions; discover current tools and use official documentation instead of assuming old menu labels or APIs still exist.
+
+After connections, read [learning writing style, cadence and workflows](references/work-pattern-discovery.md) and [creating personalized skills](references/personalized-skills.md) in full. These are part of normal complete onboarding, not optional suggestions left for the user to implement. The user can limit or skip any data source or phase; record the resulting limitation and offer an interview or supplied-example route.
 
 ## 1. Establish the work and current setup
 
@@ -56,7 +58,21 @@ Prefer existing connectors and supported APIs. Use installed plugin skills when 
 
 Complete one useful read test for each required capability in the correct account, within the authorized scope. Verify attachment retrieval separately if the workflow needs it. A safe scoped read may be enough; write access needs a separate test only when writes are required and authorized. Avoid sending test messages to people. Record failures and coverage accurately. Continue independent setup while the user completes OAuth or administrator steps.
 
-## 4. Build durable knowledge and memory
+## 4. Learn the person's writing, routines and workflows
+
+Once the selected connections work, explain that you can learn from their own sent messages, relevant received threads and calendar history to make useful skills. Settle which accounts, life/work areas, date range and exclusions they want included before reading history. Offer a bounded starting window, such as the last 30 days, with a choice to broaden, narrow, use supplied examples or skip. Reuse explicit scope already given; installed connections alone do not authorize a whole-life scan.
+
+Follow [work-pattern discovery](references/work-pattern-discovery.md). Read full selected threads and calendar records, not just snippets. Learn writing style from text the user authored, grouped by language, audience and channel. Map repeated triggers, follow-ups, meeting preparation, project updates and other observed workflows across the areas they selected. Capture cadence with counts, dates, exceptions and coverage. Calendar invitations do not prove attendance; observed timing does not establish the user's preferred schedule.
+
+Present a short, source-grounded profile and workflow map for correction. Separate observed patterns, tentative inferences, confirmed preferences and proposed improvements. Ask whether the voice sounds like them, which patterns should become routines, and which areas should stay separate. Prepare draft skills while awaiting feedback, but do not promote an inferred habit to an approved preference or activate a schedule based on it.
+
+## 5. Create and set up personalized skills
+
+Follow [personalized-skill creation](references/personalized-skills.md) to produce actual skill files, not merely recommendations. Reuse existing suitable skills and profiles before creating new ones. Create a writing-voice skill when supported by reviewed samples, and one skill per selected distinct workflow, such as inbox triage, meeting preparation, follow-up drafting or a weekly review. The person's actual needs determine the set; no fixed job, service or writing style is assumed.
+
+Store their evidence, profiles, workflow map and generated skills in the chosen private workspace, outside this reusable method repository. Use the current supported skill installation mechanism to make accepted skills discoverable, or provide working direct-file invocation if registration is unavailable. Help the person through setup and verify the installed files and available discovery state. Do not stop after leaving empty templates or asking a novice to perform the implementation themselves.
+
+## 6. Build durable knowledge and memory
 
 Use the selected builder's live instructions and preserve its records:
 
@@ -73,13 +89,15 @@ Map project knowledge, human task state, assistant memory and technical runtime 
 
 Global/native memory is optional and product-dependent. Check its actual controls and write policy. Save cross-project preferences or a thin project pointer only when explicitly requested and permitted, using the supported mechanism. Keep sensitive project facts in their project. A file named `MEMORY.md` is not proof of automatic recall, and memory settings do not prove every source was read.
 
-## 5. Demonstrate one complete workflow
+## 7. Demonstrate the personalized skills and a complete workflow
+
+Test each generated skill on a representative permitted example. For writing style, draft for a real audience without sending, then let the person correct the voice. For calendar/routine skills, verify timezone, cancellations and exceptions. For workflow skills, demonstrate the intended output, duplicate handling and one missing-data or unavailable-tool case. Save actual results and incorporate corrections in the private profile and skill. Separate file validation from demonstrated behavior and user acceptance.
 
 Use a small real authorized source or a clearly labeled synthetic fixture. Retrieve it, preserve the required source locator/version, process it with the selected method, update the correct project record, and produce the intended output. If the workflow includes authorized task-system writes, reconcile them with existing task IDs and read back the result. If external action is not authorized, stop at the concrete draft and label that boundary.
 
 Run the same input again to check for duplicates, then process a correction or changed version to check supersession. Verify the record and next action can be recovered through the project's entrypoint without relying on this chat. Respect the user's actual requested scope while testing.
 
-## 6. Enable requested recurring work
+## 8. Enable requested recurring work
 
 Configure schedules only when recurring work is requested. If the user wants automation but has not selected a routine, propose a concrete first routine and settle its material scope/cadence before activation. Do not end a setup request at a vague recommendation when an authorized routine can be configured.
 
@@ -87,8 +105,10 @@ Inspect existing schedules to avoid duplicates. Use the supported scheduler tool
 
 Use the run contract and recovery procedure in [automation and acceptance](references/automation-and-acceptance.md). Test the prompt manually, save the schedule, read back its actual settings, and distinguish that from a successful scheduled run. When local execution depends on an available computer/app, explain the verified host requirements. Never promise always-on service from a saved prompt or a dormant laptop.
 
-## 7. Handoff with demonstrated status
+## 9. Handoff with demonstrated status
 
 Finish at the requested endpoint, with the project entrypoint, tested connections, authoritative records, demonstrated workflow and schedule status. Name only concrete outstanding user actions, such as signing into a specific account or enabling a blocked administrator permission. Provide the resume instruction for each.
 
 Use precise states: prepared, connected, read-tested, write-tested, manually demonstrated, scheduled, scheduled-run verified. Keep full-corpus coverage separate from operational readiness. A capability that could not be tested stays unverified. Include how to add new sources, change a preference, run the workflow, inspect results and pause recurring work.
+
+Include the private profile and workflow-map entrypoints, history actually reviewed, unresolved inferences, created/updated skill names with invocation instructions, each skill's tested/discovery/acceptance state, and agreed routines. The reusable package must remain generic: never copy the person's profile, sent messages, calendar, account identifiers or generated personal skills back into it.

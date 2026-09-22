@@ -2,7 +2,7 @@
 
 This bundle contains both workflows needed to turn a local project into a connected AI workspace:
 
-1. [Set up the workspace](skills/setup-codex-workspace/SKILL.md): project registration, connectors, project memory, a demonstrated workflow and requested recurring work.
+1. [Set up the workspace](skills/setup-codex-workspace/SKILL.md): project registration, guided connections, learning the person's writing style and routines, reviewing a workflow map, creating and testing personalized skills, project memory and requested recurring work.
 2. [Build the second brain](skills/create-project-second-brain/SKILL.md): inventory local sources, preserve originals, create complete Markdown clones, read them and organize linked topic clusters and source indexes.
 
 All method files and the general builder's structural audit helper are included. No separately installed second-brain skill, database or memory service is required. The specialized dispute and investment builders mentioned as optional routes are not included.
@@ -11,9 +11,11 @@ All method files and the general builder's structural audit helper are included.
 
 Extract the ZIP and give Codex the extracted folder. You do not need to have a project folder or any accounts connected yet. Paste this request, replacing only the bundle path (or attach the extracted folder and refer to it):
 
-> Read `/path/to/codex-second-brain-workspace/skills/setup-codex-workspace/SKILL.md` and guide me through setup from the beginning. First ask what my second brain is for and whether I have a local project folder. Help me create or select that folder and add the project in Codex. Find out which tools I use, then walk me through connecting each needed service, including email and calendar where relevant, one step at a time and verify it works. After setup, use the included builder to preserve my local originals, create full Markdown clones, read them and organize linked topic clusters and source indexes. Help me set up project memory and propose a useful recurring workflow.
+> Read `/path/to/codex-second-brain-workspace/skills/setup-codex-workspace/SKILL.md` and guide me through setup from the beginning. First ask what my second brain is for and whether I have a local project folder. Help me create or select that folder and add the project in Codex. Find out which tools I use, then walk me through connecting each needed service, including email and calendar where relevant, one step at a time and verify it works. Agree which accounts, dates and areas you may examine. Learn my writing style from my own messages, identify routines from relevant threads and calendars, and review a workflow map with me. Create, install and test the personal skills I select, keeping all personal information in my private workspace. Then use the included builder to preserve my local originals, create full Markdown clones, read them and organize linked topic clusters and source indexes. Help me set up project memory and the recurring workflows I choose.
 
 Codex should stay with you through each sign-in step and check the result before moving on. You can say “I’m not sure”, ask for help finding a button or choose to defer a service. It should not assume accounts are connected or a project folder already exists.
+
+You choose what history Codex may review. It should ask you to correct its draft voice/profile and workflow map, then create real skill files and help you try them. If you have little history or prefer not to share it, it can interview you and use examples you supply. Private messages, calendar data, learned profiles and generated personal skills stay in your own workspace, never in this reusable bundle.
 
 For only the local second brain, without connector or automation setup:
 

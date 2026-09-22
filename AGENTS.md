@@ -4,6 +4,8 @@ This repository contains reusable methods, not a user's private second brain. Ke
 
 Preserve the first-time-user onboarding: ask project purpose and whether a local folder exists, then guide one needed connection at a time and verify it. Do not assume a ZIP upload, installed plugin or completed sign-in proves that the full workflow works.
 
+After connections, agree the person's mail/calendar discovery scope. Learn only from authorized history, distinguish self-authored voice and observed cadence from confirmed preferences, review the workflow map, and create/test actual personalized skills. All user-specific evidence, profiles and generated personal skills live outside this repository in that person's private workspace. Never use the repository author's history as example data.
+
 Keep the two skill folders as siblings so direct-file routing works. The general builder must preserve originals, create complete Markdown clones or explicit gaps, track actual reading coverage and organize source-linked topic clusters.
 
 After method edits, inspect the diff, refresh MANIFEST.json deliberately, then run:
