@@ -16,6 +16,7 @@ After method edits, inspect the diff, refresh MANIFEST.json deliberately, then r
 python3 -B scripts/build_bundle.py --check
 python3 -B -m unittest discover -s skills/create-project-second-brain/scripts -p 'test_audit_brain.py' -v
 python3 -B -m unittest discover -s scripts -p 'test_build_bundle.py' -v
+python3 -B -m unittest discover -s skills/maintain-codex-workspace/scripts -p 'test_jev_decide.py' -v
 python3 -B scripts/build_bundle.py
 ```
 

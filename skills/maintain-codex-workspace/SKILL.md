@@ -9,6 +9,10 @@ Use this skill in the person's configured private workspace for “refresh my wo
 
 Read the workspace entrypoint, source boundaries, workflow/authority map, skill register, correction ledger and last run receipt. Resolve actual paths from those records. If setup is incomplete, report the missing dependency and complete independent authorized work. Do not guess accounts, broaden sources or create a schedule merely because this skill was invoked.
 
+## Optional Jev decisions
+
+When registered in this workspace, follow [Jev connection and evaluation](../setup-codex-workspace/references/jev-decisions.md) and use [the adapter](scripts/jev_decide.py) for bounded workflow selection or source relevance. Preserve full coverage and action authority. During daily maintenance, review provider failures, usage, cache freshness and measured decision quality; retain the existing workflow if disabled, uncertain or regressed. This connection does not replace Codex or its chosen reasoning depth.
+
 ## Refresh the second brain
 
 Use the registered [general builder](../create-project-second-brain/SKILL.md) or the workspace's selected domain builder for changed authorized sources. Follow its applicable update method, preserving originals, complete clones or explicit conversion gaps, source identities/versions, reading coverage, topic clusters and indexes. Include new, changed and previously failed sources. Handle deletions as recorded source state, preserving history; do not silently erase originals or assume missing access means deletion.

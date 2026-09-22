@@ -33,6 +33,10 @@ Ask Codex to install all three skill folders under `skills/` into its current su
 
 After installation, invoke `$setup-codex-workspace` or `$create-project-second-brain`; use `$maintain-codex-workspace` for maintenance. Normal daily work should use short requests such as “Draft a reply”, with context and style loaded automatically. Verify that the current app discovers them; filesystem copying alone does not prove discovery. The direct-file instructions above work without registration.
 
+## Optional Jev connection
+
+Ask Codex to follow the [Jev setup guide](skills/setup-codex-workspace/references/jev-decisions.md) if you want to try lower-cost decisions for workflow selection and source relevance. It will help you obtain official TypeSafe access, configure a private API key and test the connection with synthetic data before evaluating your authorized examples. Never paste the key into chat. The included adapter starts disabled and then uses shadow mode until its quality has been checked. Your normal Codex workflow remains available throughout.
+
 ## What the bundle needs
 
 It is a self-contained Codex method package, not a standalone offline application. Codex still needs access to the chosen local files and suitable tools for their formats. The structural audit helper uses Python 3.9+ and the standard library. PDF/Office conversion, OCR and media transcription may require additional installed tools; unsupported inputs remain reported gaps until resolved. The skills guide tool selection and setup rather than silently installing or uploading to a new service.

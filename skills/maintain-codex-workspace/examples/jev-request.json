@@ -1,0 +1,9 @@
+{
+  "kind": "workflow",
+  "context": "Prepare me for tomorrow's meetings.",
+  "source_version": "synthetic-example-v1",
+  "candidates": {
+    "meeting_prep": "Prepare meeting briefs from calendar and relevant project sources.",
+    "reply_draft": "Draft a reply to a selected email thread in the user's voice."
+  }
+}

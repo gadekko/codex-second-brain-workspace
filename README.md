@@ -56,11 +56,11 @@ Codex first asks what the workspace is for and whether you have a local folder. 
 
 You complete sign-ins and choose the scope and actions you want. Codex carries out the setup work it can perform and guides you through the steps that require your interaction.
 
-**Current status: v0.1.2 prerelease.** Structural checks and automated tests pass, but the complete beginner experience across real account sign-ins and a full working environment has not yet been demonstrated. See [verification status](#verification-status).
+**Current status: v0.1.3 prerelease.** Structural checks and automated tests pass, but the complete beginner experience across real account sign-ins and a full working environment has not yet been demonstrated. See [verification status](#verification-status).
 
 ## Start here
 
-1. Open [v0.1.2 Releases](https://github.com/gadekko/codex-second-brain-workspace/releases/tag/v0.1.2) and download **codex-second-brain-workspace.zip** from **Assets**. No repository invitation is needed. Alternatively, use **Code → Download ZIP** for the latest repository files.
+1. Open [v0.1.3 Releases](https://github.com/gadekko/codex-second-brain-workspace/releases/tag/v0.1.3) and download **codex-second-brain-workspace.zip** from **Assets**. No repository invitation is needed. Alternatively, use **Code → Download ZIP** for the latest repository files.
 2. Give Codex access to the extracted folder, or attach the ZIP if your Codex environment can read it.
 3. Send:
 
@@ -75,6 +75,12 @@ This repository is the reusable toolkit. It contains generic methods and synthet
 Your own workspace is where your actual work belongs. It may be a local folder, your own private repository, connected services, or a combination. It is expected to contain your authorized documents, correspondence, project context, learned preferences and personal skills. Keeping the shared toolkit generic does **not** prohibit private data in your private workspace or private repository. Keep credentials in an appropriate secret store, and choose actual access/backup arrangements for your data.
 
 The setup establishes a map of your projects, responsibilities, tools and workflows. Daily work then uses the relevant current context, performs the actions you have authorized, verifies the result, and records what changed. The [continuous-learning method](skills/setup-codex-workspace/references/continuous-learning.md) turns corrections and demonstrated workflow improvements into tested skill updates with version history and rollback. It updates files and skills; it does not retrain the underlying model or create unlimited automatic access to all your information.
+
+## Optional Jev decisions
+
+Setup can connect TypeSafe Jev for small decisions such as choosing the relevant workflow or prioritizing retrieved passages. The included Python adapter batches questions, caches unchanged requests and enforces local daily call and cost-reservation limits. Codex keeps doing the reasoning and writing with your selected model.
+
+Jev needs separate API access and receives only the context you authorize. It starts in shadow mode so you can compare its decisions before using them. Uncertain results and connection failures fall back to the existing workflow. Accuracy gains and total cost savings need to be measured on your work; they are not established by the adapter tests. See the [connection and evaluation guide](skills/setup-codex-workspace/references/jev-decisions.md).
 
 ## Included skills
 
@@ -98,6 +104,7 @@ Python 3.9+ with the standard library is sufficient:
 python3 -B scripts/build_bundle.py --check
 python3 -B -m unittest discover -s skills/create-project-second-brain/scripts -p 'test_audit_brain.py' -v
 python3 -B -m unittest discover -s scripts -p 'test_build_bundle.py' -v
+python3 -B -m unittest discover -s skills/maintain-codex-workspace/scripts -p 'test_jev_decide.py' -v
 python3 -B scripts/build_bundle.py
 ```
 
