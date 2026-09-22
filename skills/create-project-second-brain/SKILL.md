@@ -68,3 +68,7 @@ If the project needs to remain usable without the installed skill, include the h
 For a substantial build/restructure, give an independent reader the completed entrypoint and authorized raw inputs, without briefing them on the intended answer. Check that they can explain the purpose, retrieve supporting and contrary evidence, distinguish requirements from suggestions, state what works and resume the next action. An actual small update is stronger evidence than a file-count check. Repair demonstrated defects; avoid ceremonial repeat reviews.
 
 Close with the start point, useful changes, checked scope, material gaps and exact next action. If requested, save local version history or package the result; verify the actual output. Keep reusable skill instructions and synthetic fixtures free of project/client content. Installed files, successful structural validation and demonstrated client discovery are separate states.
+
+## License
+
+Licensed under GNU Affero General Public License version 3 only (`AGPL-3.0-only`). See [LICENSE](LICENSE).
