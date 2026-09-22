@@ -1,12 +1,41 @@
 # Codex Second-Brain Workspace
 
-A reusable setup and operating method for a fully integrated AI work environment: Codex learns the user's context and history, works across their tools, carries out authorized workflows, and improves its maintained knowledge and skills from experience.
+Set up Codex as a working assistant that knows your projects, finds the relevant history, uses your tools, writes in your style and handles the recurring work you choose—without rebuilding the context in every conversation.
 
-Start with no project folder and no connected accounts. The setup skill asks what the project is for, helps create or select a local folder, and walks through each needed connection one step at a time. With an agreed scope, it learns from the person's own sent messages, relevant threads and calendar history, maps writing style and recurring workflows, and creates and tests personalized skills. The included builder preserves originals, creates full Markdown clones, reads the material, and organizes linked topic clusters and source indexes.
+This toolkit guides you from an unconfigured Codex workspace to a connected, personal working environment. You can start without a project folder or any connected accounts. It contains the setup instructions, second-brain builder and ongoing learning method that Codex follows; Codex performs the work with the tools and access available in your environment.
+
+## What you should have after setup
+
+- **Connected working tools:** the email, calendar, files, task manager and other services your workflows need, with the relevant capabilities tested.
+- **A source-linked second brain:** your project files preserved, converted into full Markdown copies where supported, and organized into linked topics and indexes. Unread or unsupported material remains visible.
+- **Context about how you work:** a reviewed map of your projects, responsibilities, writing style, routines and preferred cadence, learned from the history you choose to share.
+- **Personal skills that do useful jobs:** for example, preparing for meetings, drafting replies, following up on work or producing a weekly review, created and tested for your actual needs.
+- **Continuity and improvement:** decisions, corrections and unfinished work saved for later tasks, plus a method for updating skills, checking that changes help and restoring an earlier version if needed.
+- **The recurring work you select:** configured routines with clear outputs, notifications and recovery steps, where the available scheduler supports them.
+
+The intended experience is to ask things like:
+
+> “Prepare me for tomorrow's meeting using the latest emails and project documents.”
+>
+> “Draft a reply in my usual style, taking our earlier discussion into account.”
+>
+> “What changed in this project, and what needs my attention?”
+>
+> “Next time, handle this differently—and update the skill so I don't have to repeat the correction.”
+
+These are target workflows to configure and verify, not a claim that every account or tool supports them already. Codex retrieves the relevant context from maintained records and sources; it does not automatically know everything or retrain its underlying model.
+
+## How setup works
+
+Codex first asks what the workspace is for and whether you have a local folder. It then helps you connect each needed service one step at a time. After agreeing which history to review, it reads your own sent messages, relevant threads and calendar records, presents its findings for correction, and creates your personal skills. It builds the second brain, tests the selected workflows and establishes the ongoing learning process.
+
+You complete sign-ins and choose the scope and actions you want. Codex carries out the setup work it can perform and guides you through the steps that require your interaction.
+
+**Current status: v0.1.0 prerelease.** Structural checks and automated tests pass, but the complete beginner experience across real account sign-ins and a full working environment has not yet been demonstrated. See [verification status](#verification-status).
 
 ## Start here
 
-1. Download this repository using **Code → Download ZIP**, then extract it.
+1. Open [v0.1.0 Releases](https://github.com/gadekko/codex-second-brain-workspace/releases/tag/v0.1.0) and download **codex-second-brain-workspace.zip** from **Assets**. The private repository requires access. Alternatively, use **Code → Download ZIP** for the latest repository files.
 2. Give Codex access to the extracted folder, or attach the ZIP if your Codex environment can read it.
 3. Send:
 
