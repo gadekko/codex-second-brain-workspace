@@ -167,7 +167,7 @@ class JevTests(unittest.TestCase):
             self.assertEqual(json.loads(request.data), body)
             self.assertEqual(request.get_header('Authorization'), 'Bearer synthetic-key')
             self.assertEqual(kwargs['timeout'], 15)
-            self.assertIsInstance(opener.call_args.args[0], j.NoRedirect)
+            self.assertIs(opener.call_args.args[0], j.NoRedirect)
 
     def test_probability_gate_and_changed_context(self):
         def uncertain(body, key):
