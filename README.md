@@ -1,6 +1,6 @@
 # Codex Second-Brain Workspace
 
-Set up Codex as a working assistant that knows your projects, finds the relevant history, uses your tools, writes in your style and handles the recurring work you choose—without rebuilding the context in every conversation.
+Set up Codex as a working assistant that knows your projects, finds the relevant history, uses your tools, writes in your style and handles the recurring work you choose, without rebuilding the context in every conversation.
 
 This toolkit guides you from an unconfigured Codex workspace to a connected, personal working environment. You can start without a project folder or any connected accounts. It contains the setup instructions, second-brain builder and ongoing learning method that Codex follows; Codex performs the work with the tools and access available in your environment.
 
@@ -21,7 +21,7 @@ The intended experience is to ask things like:
 >
 > “What changed in this project, and what needs my attention?”
 >
-> “Next time, handle this differently—and update the skill so I don't have to repeat the correction.”
+> “Next time, handle this differently, and update the skill so I don't have to repeat the correction.”
 
 These are target workflows to configure and verify, not a claim that every account or tool supports them already. Codex retrieves the relevant context from maintained records and sources; it does not automatically know everything or retrain its underlying model.
 
