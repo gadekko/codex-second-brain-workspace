@@ -29,7 +29,8 @@ class BundleTests(unittest.TestCase):
             self.assertEqual({n.split('/', 1)[1] for n in z.namelist()}, expected)
             license_bytes = (self.root / 'LICENSE').read_bytes()
             for name in ['LICENSE', 'skills/setup-codex-workspace/LICENSE',
-                         'skills/create-project-second-brain/LICENSE']:
+                         'skills/create-project-second-brain/LICENSE',
+                         'skills/maintain-codex-workspace/LICENSE']:
                 self.assertEqual(z.read('codex-second-brain-workspace/' + name), license_bytes)
 
     def test_missing_license_blocks_release(self):

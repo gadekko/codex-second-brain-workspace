@@ -56,7 +56,7 @@ Repair demonstrated defects and repeat affected checks. Let the person try a ski
 
 ## Handoff and maintenance
 
-Maintain a private skill register: name, purpose, relative location, profile/workflow dependencies, authority, version, install/discovery status, behavioral tests, user-acceptance state and next action. Provide simple prompts such as “Use my meeting-preparation skill for tomorrow” with the actual installed name, plus the direct-file alternative.
+Maintain a private skill register: name, purpose, relative location, profile/workflow dependencies, authority, version, install/discovery status, behavioral tests, user-acceptance state and next action. Make the [short everyday prompts](everyday-defaults.md) the normal route, including “Prepare me for tomorrow's meetings” and “Draft a reply”. Keep the actual installed name and direct-file alternative available for troubleshooting.
 
 Link approved schedules to their corresponding skill and current private workflow record. Preserve the user's selected model/depth. Reassess routines when the user changes responsibilities, corrects a preference or requests a refresh; do not repeatedly rescan their life without a defined source boundary and real authorized scheduler.
 

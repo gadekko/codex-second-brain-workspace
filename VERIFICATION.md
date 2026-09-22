@@ -2,7 +2,9 @@
 
 Prepared: 2026-09-22.
 
-For v0.1.1, the canonical AGPL-3.0 license text is included at the bundle root and in both independently installable skill folders. The license grant is version 3 only. Packaging tests additionally check license inclusion and reject a missing root license. All 17 automated tests passed for this revision; source/model-behavior limitations below remain unchanged.
+For v0.1.2, everyday request routing, a dedicated maintenance skill and guided daily/attention/meeting schedule setup were added. These instructions have not been tested with real accounts or an actual scheduled run.
+
+For v0.1.1, the canonical AGPL-3.0 license text is included at the bundle root and in the independently installable skill folders. The license grant is version 3 only. Packaging tests additionally check license inclusion and reject a missing root license. All 17 automated tests passed for this revision; source/model-behavior limitations below remain unchanged.
 
 The onboarding instructions were subsequently revised to begin with project purpose and local-folder questions, followed by step-by-step guidance and verification for each needed connection. The skill validator and package/link/hash checks were rerun after that revision. These are instruction and packaging checks, not a live novice-user onboarding test.
 
@@ -10,13 +12,14 @@ The personal-workflow phase now specifies scoped email/calendar review, evidence
 
 The operating method also covers daily context maintenance, executing authorized work, correction propagation, skill revision with regression checks, version history and rollback. Users' own private repositories may contain their real data; the generic-only restriction applies to this toolkit's source and release payload. These procedures have not yet been demonstrated across a real user's full working environment.
 
-The repository's release builder has six synthetic tests covering payload membership, changed files, broken links, symlinks, common private markers and reserved example addresses. Private-marker checks apply before manifest refresh as well as before builds and do not echo flagged content in their error messages. They are not a semantic confidentiality guarantee.
+The repository's release builder has seven synthetic tests covering payload membership, changed files, broken links, symlinks, common private markers and reserved example addresses. Private-marker checks apply before manifest refresh as well as before builds and do not echo flagged content in their error messages. They are not a semantic confidentiality guarantee.
 
 ## Included and checked
 
-- Complete workspace setup skill and its four operational references.
+- Complete workspace setup skill and its operational references, including everyday defaults and routine setup.
+- Dedicated workspace maintenance skill for source deltas, attention reconciliation and tested private skill revisions.
 - Complete general project second-brain builder, expanded with the full local-corpus/Markdown-clone/topic-cluster workflow, its existing maintenance references, UI metadata, structural audit helper and helper tests.
-- Both skills passed the available Codex skill validator.
+- All three skills passed the available Codex skill validator.
 - The structural audit helper's 10 behavioral tests passed, including broken links, path escapes, malformed records, duplicate source IDs and changed preserved bytes.
 - A separate synthetic smoke exercise used three text sources, three full Markdown clones and two linked topic clusters. The clone bodies matched their original source bytes; all three recorded source hashes passed.
 - The synthetic topic pages preserved an earlier CSV-only decision, its replacement with CSV and JSON, a source belonging to both clusters, the target date and an explicitly unresolved deployment-region decision.

@@ -76,6 +76,8 @@ Follow [personalized-skill creation](references/personalized-skills.md) to produ
 
 Store their evidence, profiles, workflow map and generated skills in the chosen private workspace, outside this reusable method repository. Use the current supported skill installation mechanism to make accepted skills discoverable, or provide working direct-file invocation if registration is unavailable. Help the person through setup and verify the installed files and available discovery state. Do not stop after leaving empty templates or asking a novice to perform the implementation themselves.
 
+Read and implement [everyday defaults](references/everyday-defaults.md). Route ordinary meeting, reply, attention and correction requests to the relevant personal skills and context without requiring the person to repeat source or voice instructions. Include the bundled [maintenance skill](../maintain-codex-workspace/SKILL.md) in the private skill register and verify its accessible installation or direct-file route.
+
 ## 6. Build durable knowledge and memory
 
 Use the selected builder's live instructions and preserve its records:
@@ -103,7 +105,7 @@ Run the same input again to check for duplicates, then process a correction or c
 
 ## 8. Enable requested recurring work
 
-Configure schedules only when recurring work is requested. If the user wants automation but has not selected a routine, propose a concrete first routine and settle its material scope/cadence before activation. Do not end a setup request at a vague recommendation when an authorized routine can be configured.
+Offer the concrete daily maintenance, attention-check and meeting-preparation routines in [everyday defaults](references/everyday-defaults.md) as part of complete onboarding. Recommend a daily maintenance run; settle its scope and timing and configure it when selected. Configure schedules only when recurring work is requested. If the user wants automation but has not selected a routine, propose a concrete first routine and settle its material scope/cadence before activation. Do not end a setup request at a vague recommendation when an authorized routine can be configured.
 
 Inspect existing schedules to avoid duplicates. Use the supported scheduler tool/UI and its current schema. In the Codex app, prefer an in-task heartbeat for ongoing follow-ups unless the user asks for independent scheduled runs. Follow the live tool contract for project selection, model, execution environment and notification controls. Preserve the user's chosen model and reasoning depth.
 
