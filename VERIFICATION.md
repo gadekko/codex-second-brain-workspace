@@ -2,6 +2,8 @@
 
 Prepared: 2026-09-22.
 
+For v0.1.1, the canonical AGPL-3.0 license text is included at the bundle root and in both independently installable skill folders. The license grant is version 3 only. Packaging tests additionally check license inclusion and reject a missing root license. All 17 automated tests passed for this revision; source/model-behavior limitations below remain unchanged.
+
 The onboarding instructions were subsequently revised to begin with project purpose and local-folder questions, followed by step-by-step guidance and verification for each needed connection. The skill validator and package/link/hash checks were rerun after that revision. These are instruction and packaging checks, not a live novice-user onboarding test.
 
 The personal-workflow phase now specifies scoped email/calendar review, evidence-based writing profiles and cadence, a user-reviewed workflow map, and creation/installation/testing of actual private personal skills. These instructions were reviewed for source scope, authorship distinctions, preference confirmation, private storage and external-action boundaries. No real person's email or calendar was accessed to develop or test this phase.

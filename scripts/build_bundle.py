@@ -28,7 +28,7 @@ def check_private_markers(files):
 
 
 def payload():
-    files = [ROOT / 'START_HERE.md', ROOT / 'VERIFICATION.md']
+    files = [ROOT / 'START_HERE.md', ROOT / 'VERIFICATION.md', ROOT / 'LICENSE']
     for p in (ROOT / 'skills').rglob('*'):
         if p.name == '.DS_Store' or '__pycache__' in p.parts or p.suffix == '.pyc':
             continue

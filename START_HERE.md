@@ -42,3 +42,7 @@ Connectors require the user's actual sign-in and supported account permissions. 
 The [verification report](VERIFICATION.md) describes what was checked for this release. `MANIFEST.json` lists the exact distributed files and hashes; it excludes itself to avoid self-referential hashing. Verify the manifest before sharing or installation, and regenerate it only after intentional reviewed changes.
 
 For the completed project, the builder writes its own source catalog, coverage records, topic map and maintenance instructions. Those private records remain separate from this reusable package.
+
+## License
+
+This toolkit is licensed under GNU Affero General Public License version 3 only (`AGPL-3.0-only`). The full [LICENSE](LICENSE) is included in this ZIP and each skill folder.

@@ -122,3 +122,7 @@ Finish at the requested endpoint, with the project entrypoint, tested connection
 Use precise states: prepared, connected, read-tested, write-tested, manually demonstrated, scheduled, scheduled-run verified. Keep full-corpus coverage separate from operational readiness. A capability that could not be tested stays unverified. Include how to add new sources, change a preference, run the workflow, inspect results and pause recurring work.
 
 Include the private profile and workflow-map entrypoints, history actually reviewed, unresolved inferences, created/updated skill names with invocation instructions, each skill's tested/discovery/acceptance state, and agreed routines. The reusable package must remain generic: never copy the person's profile, sent messages, calendar, account identifiers or generated personal skills back into it.
+
+## License
+
+Licensed under GNU Affero General Public License version 3 only (`AGPL-3.0-only`). See [LICENSE](LICENSE).

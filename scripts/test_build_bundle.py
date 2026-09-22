@@ -27,6 +27,14 @@ class BundleTests(unittest.TestCase):
         with zipfile.ZipFile(self.root / 'dist/codex-second-brain-workspace.zip') as z:
             expected = set(json.loads((self.root / 'MANIFEST.json').read_text())['files']) | {'MANIFEST.json'}
             self.assertEqual({n.split('/', 1)[1] for n in z.namelist()}, expected)
+            license_bytes = (self.root / 'LICENSE').read_bytes()
+            for name in ['LICENSE', 'skills/setup-codex-workspace/LICENSE',
+                         'skills/create-project-second-brain/LICENSE']:
+                self.assertEqual(z.read('codex-second-brain-workspace/' + name), license_bytes)
+
+    def test_missing_license_blocks_release(self):
+        (self.root / 'LICENSE').unlink()
+        self.assertNotEqual(self.run_builder('--refresh').returncode, 0)
 
     def test_changed_or_new_payload_fails_without_refresh(self):
         (self.root / 'skills/setup-codex-workspace/extra.md').write_text('New method file')

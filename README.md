@@ -31,11 +31,11 @@ Codex first asks what the workspace is for and whether you have a local folder. 
 
 You complete sign-ins and choose the scope and actions you want. Codex carries out the setup work it can perform and guides you through the steps that require your interaction.
 
-**Current status: v0.1.0 prerelease.** Structural checks and automated tests pass, but the complete beginner experience across real account sign-ins and a full working environment has not yet been demonstrated. See [verification status](#verification-status).
+**Current status: v0.1.1 prerelease.** Structural checks and automated tests pass, but the complete beginner experience across real account sign-ins and a full working environment has not yet been demonstrated. See [verification status](#verification-status).
 
 ## Start here
 
-1. Open [v0.1.0 Releases](https://github.com/gadekko/codex-second-brain-workspace/releases/tag/v0.1.0) and download **codex-second-brain-workspace.zip** from **Assets**. The private repository requires access. Alternatively, use **Code → Download ZIP** for the latest repository files.
+1. Open [v0.1.1 Releases](https://github.com/gadekko/codex-second-brain-workspace/releases/tag/v0.1.1) and download **codex-second-brain-workspace.zip** from **Assets**. No repository invitation is needed. Alternatively, use **Code → Download ZIP** for the latest repository files.
 2. Give Codex access to the extracted folder, or attach the ZIP if your Codex environment can read it.
 3. Send:
 
@@ -85,4 +85,10 @@ The reusable toolkit contains generic methods and synthetic tests only. Never se
 
 The bundle checker rejects common private email addresses, home-directory paths and credential patterns in method payloads. This is a limited check, not proof that arbitrary prose contains no private information; inspect every intended release's content as well.
 
-This repository is private. Only collaborators you invite can access its GitHub files. You can also share the generated ZIP separately; it contains the reusable methods, not your connected accounts or personal second brain. Give each project its own private working folder.
+This repository and its releases are public. Anyone can view the toolkit and download the release ZIP. You can also share the generated ZIP separately; it contains the reusable methods, not your connected accounts or personal second brain. Give each project its own private working folder.
+
+## License
+
+Copyright (C) 2026 Marco Poblete.
+
+This toolkit is licensed under the GNU Affero General Public License, version 3 only (`AGPL-3.0-only`). See [LICENSE](LICENSE) for the full terms.
