@@ -1,9 +1,11 @@
 # Codex second-brain workspace bundle
 
-This bundle contains both workflows needed to turn a local project into a connected AI workspace:
+This bundle contains three workflows needed to turn a local project into a connected AI workspace:
 
 1. [Set up the workspace](skills/setup-codex-workspace/SKILL.md): project registration, guided connections, learning the person's writing style and routines, reviewing a workflow map, creating and testing personalized skills, project memory and requested recurring work.
 2. [Build the second brain](skills/create-project-second-brain/SKILL.md): inventory local sources, preserve originals, create complete Markdown clones, read them and organize linked topic clusters and source indexes.
+
+3. [Maintain the workspace](skills/maintain-codex-workspace/SKILL.md): refresh changed sources, reconcile attention items and review personal skills for tested, evidence-based updates with rollback.
 
 All method files and the general builder's structural audit helper are included. No separately installed second-brain skill, database or memory service is required. The specialized dispute and investment builders mentioned as optional routes are not included.
 
@@ -13,7 +15,7 @@ The goal is an integrated work environment that uses your context across tools a
 
 Extract the ZIP and give Codex the extracted folder. You do not need to have a project folder or any accounts connected yet. Paste this request, replacing only the bundle path (or attach the extracted folder and refer to it):
 
-> Read `/path/to/codex-second-brain-workspace/skills/setup-codex-workspace/SKILL.md` and guide me through setup from the beginning. First ask what my second brain is for and whether I have a local project folder. Help me create or select that folder and add the project in Codex. Find out which tools I use, then walk me through connecting each needed service, including email and calendar where relevant, one step at a time and verify it works. Agree which accounts, dates and areas you may examine. Learn my writing style from my own messages, identify routines from relevant threads and calendars, and review a workflow map with me. Create, install and test the personal skills I select, keeping all personal information in my private workspace. Then use the included builder to preserve my local originals, create full Markdown clones, read them and organize linked topic clusters and source indexes. Help me set up project memory and the recurring workflows I choose.
+> Read `/path/to/codex-second-brain-workspace/skills/setup-codex-workspace/SKILL.md` and guide me through setup from the beginning. First ask what my second brain is for and whether I have a local project folder. Help me create or select that folder and add the project in Codex. Find out which tools I use, then walk me through connecting each needed service, including email and calendar where relevant, one step at a time and verify it works. Agree which accounts, dates and areas you may examine. Learn my writing style from my own messages, identify routines from relevant threads and calendars, and review a workflow map with me. Create, install and test the personal skills I select, keeping all personal information in my private workspace. Then use the included builder to preserve my local originals, create full Markdown clones, read them and organize linked topic clusters and source indexes. Make short requests automatically use the relevant context and my confirmed writing style. Help me set up project memory, daily workspace and skill maintenance, attention checks and meeting preparation on the schedules I choose.
 
 Codex should stay with you through each sign-in step and check the result before moving on. You can say “I’m not sure”, ask for help finding a button or choose to defer a service. It should not assume accounts are connected or a project folder already exists.
 
@@ -27,9 +29,9 @@ Keep the method outside the source corpus if convenient; otherwise the builder m
 
 ## Install for repeated use
 
-Ask Codex to install both skill folders under `skills/` into its current supported user skill location. If a skill with the same name exists, compare versions, preserve a backup and reconcile changes before replacing it. Both folders must remain siblings because the setup skill links directly to the bundled builder. Do not paste the whole bundle into a single `SKILL.md`.
+Ask Codex to install all three skill folders under `skills/` into its current supported user skill location. If a skill with the same name exists, compare versions, preserve a backup and reconcile changes before replacing it. All three folders must remain siblings because the setup skill links directly to the bundled builder. Do not paste the whole bundle into a single `SKILL.md`.
 
-After installation, invoke `$setup-codex-workspace` or `$create-project-second-brain`. Verify that the current app discovers them; filesystem copying alone does not prove discovery. The direct-file instructions above work without registration.
+After installation, invoke `$setup-codex-workspace` or `$create-project-second-brain`; use `$maintain-codex-workspace` for maintenance. Normal daily work should use short requests such as “Draft a reply”, with context and style loaded automatically. Verify that the current app discovers them; filesystem copying alone does not prove discovery. The direct-file instructions above work without registration.
 
 ## What the bundle needs
 

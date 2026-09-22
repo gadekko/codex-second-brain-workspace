@@ -13,17 +13,42 @@ This toolkit guides you from an unconfigured Codex workspace to a connected, per
 - **Continuity and improvement:** decisions, corrections and unfinished work saved for later tasks, plus a method for updating skills, checking that changes help and restoring an earlier version if needed.
 - **The recurring work you select:** configured routines with clear outputs, notifications and recovery steps, where the available scheduler supports them.
 
-The intended experience is to ask things like:
+## Say less. Get work done with your context.
 
-> “Prepare me for tomorrow's meeting using the latest emails and project documents.”
->
-> “Draft a reply in my usual style, taking our earlier discussion into account.”
->
-> “What changed in this project, and what needs my attention?”
->
-> “Next time, handle this differently, and update the skill so I don't have to repeat the correction.”
+After setup, the goal is to make ordinary requests feel this simple:
 
-These are target workflows to configure and verify, not a claim that every account or tool supports them already. Codex retrieves the relevant context from maintained records and sources; it does not automatically know everything or retrain its underlying model.
+| You say | What Codex is configured to do in the background |
+| --- | --- |
+| **“Prepare me for tomorrow's meetings.”** | Check your calendar in your timezone, identify the relevant projects and people, read current emails and documents, recover earlier decisions and open actions, and prepare a source-linked brief for each meeting. |
+| **“Draft a reply.”** | Read the full conversation, retrieve relevant earlier discussions and commitments, select your writing style for that person and language, and prepare a reply grounded in the current facts. |
+| **“What needs my attention?”** | Reconcile project changes, deadlines, unanswered commitments and blockers with the latest email, calendar and task state, then show what matters and what you can do next. |
+| **“Next time, do it this way.”** | Save the correction in the right context, update the affected personal skill when authorized, test it against the corrected case and a previous successful case, and keep the earlier version available for rollback. |
+
+You should not have to add “use my emails”, “check the project documents” or “write in my style” every time. Setup makes relevant context and your confirmed preferences part of the normal workflow. Sources that cannot be accessed remain visible gaps.
+
+## Useful work even when you have not asked
+
+Setup walks you through choosing and activating real schedules:
+
+- **Meeting preparation:** have briefs prepared at your chosen time, using the same context-aware skill you can invoke yourself.
+- **Attention checks:** look for meaningful changes, approaching deadlines and things waiting on you. Keep track of what was already surfaced or resolved, so unchanged items do not become repeated nudges.
+- **Daily maintenance:** refresh changed source material, update affected Markdown copies, topic clusters and indexes, reconcile open work, and review your registered personal skills for improvements supported by corrections or actual failures.
+
+The daily run reviews all registered personal skills. It changes only those that need a justified improvement, checks the change and preserves a rollback version. Clear corrections can be incorporated during your work without waiting for the next daily run. Quiet runs stay quiet unless you choose regular reports; actionable changes, failures and decisions reach you under your notification preferences.
+
+```mermaid
+flowchart TD
+    A[Your short request or an activated schedule] --> B[Find the relevant project and personal skill]
+    B --> C[Read current sources and relevant history]
+    C --> D[Apply your preferences and action permissions]
+    D --> E[Prepare or perform the authorized work]
+    E --> F[Verify the result and save current context]
+    F --> G[Capture corrections and unresolved work]
+    G --> H[Test justified skill updates and retain rollback]
+    H --> B
+```
+
+This is the operating experience the toolkit configures and helps you verify. It depends on your connected tools, authorized sources and an available execution environment. Downloading the ZIP alone does not activate schedules. Codex retrieves maintained context; it does not automatically know every past conversation or retrain its underlying model.
 
 ## How setup works
 
@@ -31,11 +56,11 @@ Codex first asks what the workspace is for and whether you have a local folder. 
 
 You complete sign-ins and choose the scope and actions you want. Codex carries out the setup work it can perform and guides you through the steps that require your interaction.
 
-**Current status: v0.1.1 prerelease.** Structural checks and automated tests pass, but the complete beginner experience across real account sign-ins and a full working environment has not yet been demonstrated. See [verification status](#verification-status).
+**Current status: v0.1.2 prerelease.** Structural checks and automated tests pass, but the complete beginner experience across real account sign-ins and a full working environment has not yet been demonstrated. See [verification status](#verification-status).
 
 ## Start here
 
-1. Open [v0.1.1 Releases](https://github.com/gadekko/codex-second-brain-workspace/releases/tag/v0.1.1) and download **codex-second-brain-workspace.zip** from **Assets**. No repository invitation is needed. Alternatively, use **Code → Download ZIP** for the latest repository files.
+1. Open [v0.1.2 Releases](https://github.com/gadekko/codex-second-brain-workspace/releases/tag/v0.1.2) and download **codex-second-brain-workspace.zip** from **Assets**. No repository invitation is needed. Alternatively, use **Code → Download ZIP** for the latest repository files.
 2. Give Codex access to the extracted folder, or attach the ZIP if your Codex environment can read it.
 3. Send:
 
@@ -56,6 +81,7 @@ The setup establishes a map of your projects, responsibilities, tools and workfl
 | Skill | Purpose |
 | --- | --- |
 | [setup-codex-workspace](skills/setup-codex-workspace/SKILL.md) | Guided connections; scoped email/calendar discovery; voice and workflow profiles; personalized skill creation, installation and testing; memory and automation setup |
+| [maintain-codex-workspace](skills/maintain-codex-workspace/SKILL.md) | Daily source refresh, attention reconciliation and evidence-based personal skill updates with tests and rollback |
 | [create-project-second-brain](skills/create-project-second-brain/SKILL.md) | Local corpus inventory, preserved originals, full Markdown clones, topic clusters, source indexes and updates |
 
 No separately installed second-brain skill or hosted database is required. Codex needs access to your selected files and suitable conversion/OCR tools for their formats. Recurring work requires a supported scheduler. Specialized dispute and investment builders are optional and not included.

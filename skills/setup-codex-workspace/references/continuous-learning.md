@@ -56,6 +56,8 @@ Agree during setup how private skill maintenance should work. A practical option
 
 Prefer specific improvements over universal rules derived from a single incident. Do not make an instruction stricter simply because a source contained one unusual exception. Do not silently switch model or reduce reasoning depth as an optimization.
 
+Use the bundled [maintenance skill](../../maintain-codex-workspace/SKILL.md) as the executable method for these refresh and revision runs. Install the [everyday defaults](everyday-defaults.md) so short requests and scoped corrections trigger the right behavior without repeated instructions.
+
 ## 5. Refresh sources and reassess routines
 
 During active work, incorporate relevant new information under the agreed source scope. For future refreshes, use an actual authorized schedule/event mechanism with source bounds, cursor/overlap, duplicate handling, notification intent and failure recovery. Reuse existing routines and do not create competing loops.
