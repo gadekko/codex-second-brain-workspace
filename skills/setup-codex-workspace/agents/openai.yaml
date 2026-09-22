@@ -1,0 +1,4 @@
+interface:
+  display_name: "Set Up a Codex Workspace"
+  short_description: "Connect tools, memory, projects and recurring work"
+  default_prompt: "Use $setup-codex-workspace to guide me from the beginning: ask what my project is for and whether I have a local folder, then help me connect each needed tool step by step before building my second brain."

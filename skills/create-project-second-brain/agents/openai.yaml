@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Second Brain"
+  short_description: "Build Markdown clones, topic clusters and source indexes"
+  default_prompt: "Use $create-project-second-brain to build a source-linked second brain from all substantive local project files, with complete Markdown clones, linked topic clusters and verified coverage."
